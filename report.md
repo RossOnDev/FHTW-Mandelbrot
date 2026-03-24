@@ -1,5 +1,5 @@
 # Report: Exercise 2, Data Parallelism – Parallel Mandelbrot
-## Patrick Rössler (GRUPPE HAT SICH GEÄNDERT!)
+## Patrick Rössler & Thomas Pleiner (GRUPPE HAT SICH GEÄNDERT!)
 
 
 ### 1. Describe your approach (technology used, parallelization strategy, scheduling scheme (if any), additional findings, interesting remarks): 1 point.
@@ -13,6 +13,9 @@ Die gemessenen Werte zeigen einen sehr guten Speedup:
 - 4 Threads: Speedup 3.88031
 - 8 Threads: Speedup 6.79611
 - 16 Threads: Speedup 10.6517
+
+Anmerkung: Am Testsystem ist die CPU auslastung (auch veränderung der Parameter) nicht in die höhe gestiegen (CPU Auslastung bei ~20%, i7-11800H). Gestartet wurde
+über die IDE (CLion).
 
 Zusätzlich werden automatisch ein Mandelbrot-Bild mandelbrot.png und eine Speedup-Grafik speedup.png erzeugt.  
 Durch die Speedup Grafik ist gut zu sehen, dass der Speedup bei höheren Threads nicht mehr linear steigt.
